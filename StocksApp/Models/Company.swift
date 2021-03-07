@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Company {
+struct Company: Codable {
     let companyName: String
     let symbol: String
     let sector: String

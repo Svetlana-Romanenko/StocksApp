@@ -9,9 +9,12 @@ import UIKit
 
 class StocksListTableViewController: UITableViewController {
     
+    //MARK: - Public properties
+    
+    var companies: [Company] = []
+    
     //MARK: - Private properties
     
-    private var companies: [Company] = []
     private var company: Company?
     private var urls: URLs.AllCases?
     private var filteredStocks: [Company] = []

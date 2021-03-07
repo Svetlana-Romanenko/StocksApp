@@ -74,29 +74,28 @@
                                     </label>
                                 </subviews>
                             </stackView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sjz-b8-9S8">
-                                <rect key="frame" x="96" y="407" width="128" height="128"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="sjz-b8-9S8" secondAttribute="height" multiplier="1:1" id="qe2-j1-EEH"/>
-                                    <constraint firstAttribute="height" constant="128" id="shU-KQ-IIJ"/>
-                                </constraints>
-                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nmf-pN-amO">
+                                <rect key="frame" x="122.5" y="479" width="75" height="30"/>
+                                <state key="normal" title="AF request"/>
+                                <connections>
+                                    <action selector="requestButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="yVE-5x-vlJ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="xho-fO-jg4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="1cM-WG-5dZ"/>
                             <constraint firstItem="xho-fO-jg4" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="63" id="7Vt-cI-haU"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="sjz-b8-9S8" secondAttribute="bottom" constant="33" id="cf7-9z-O62"/>
-                            <constraint firstItem="sjz-b8-9S8" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="rnS-Y4-3Kb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="nmf-pN-amO" secondAttribute="bottom" constant="59" id="dZf-Xg-WA7"/>
                             <constraint firstItem="sKQ-Ax-JyB" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="63" id="s8W-wS-Tbt"/>
+                            <constraint firstItem="nmf-pN-amO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tbE-WG-Xwp"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="sKQ-Ax-JyB" secondAttribute="trailing" constant="16" id="utf-aL-skS"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="a2e-1q-csp"/>
                     <connections>
                         <outlet property="companyNameLabel" destination="UYm-t0-Xkx" id="H6E-PB-LkI"/>
-                        <outlet property="logoLabel" destination="sjz-b8-9S8" id="QLt-A7-v6G"/>
                         <outlet property="priceChangeLabel" destination="Cgs-JA-wGw" id="QXq-Go-8ra"/>
                         <outlet property="priceLabel" destination="8Vl-bg-ulu" id="WuE-m1-4kr"/>
                         <outlet property="symbolLabel" destination="GaG-WV-rp5" id="CHC-Zh-7Mn"/>
