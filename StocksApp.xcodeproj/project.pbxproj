@@ -9,21 +9,29 @@
 /* Begin PBXBuildFile section */
 		FF4FABFF25F3F25800A14B53 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4FABFE25F3F25800A14B53 /* AppDelegate.swift */; };
 		FF4FAC0125F3F25800A14B53 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4FAC0025F3F25800A14B53 /* SceneDelegate.swift */; };
-		FF4FAC0325F3F25800A14B53 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4FAC0225F3F25800A14B53 /* ViewController.swift */; };
 		FF4FAC0625F3F25800A14B53 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF4FAC0425F3F25800A14B53 /* Main.storyboard */; };
 		FF4FAC0825F3F25D00A14B53 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF4FAC0725F3F25D00A14B53 /* Assets.xcassets */; };
 		FF4FAC0B25F3F25D00A14B53 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF4FAC0925F3F25D00A14B53 /* LaunchScreen.storyboard */; };
+		FF4FAC2025F3FA8600A14B53 /* StocksListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4FAC1F25F3FA8600A14B53 /* StocksListTableViewController.swift */; };
+		FF4FAC2325F3FAA700A14B53 /* StocksInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4FAC2225F3FAA700A14B53 /* StocksInfoViewController.swift */; };
+		FF4FAC2625F3FAD200A14B53 /* Company.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4FAC2525F3FAD200A14B53 /* Company.swift */; };
+		FF4FAC2925F3FB6500A14B53 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4FAC2825F3FB6500A14B53 /* NetworkManager.swift */; };
+		FF4FAC2D25F427BE00A14B53 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4FAC2C25F427BE00A14B53 /* TableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FF4FABFB25F3F25800A14B53 /* StocksApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StocksApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF4FABFE25F3F25800A14B53 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FF4FAC0025F3F25800A14B53 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FF4FAC0225F3F25800A14B53 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FF4FAC0525F3F25800A14B53 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FF4FAC0725F3F25D00A14B53 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FF4FAC0A25F3F25D00A14B53 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FF4FAC0C25F3F25D00A14B53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF4FAC1F25F3FA8600A14B53 /* StocksListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocksListTableViewController.swift; sourceTree = "<group>"; };
+		FF4FAC2225F3FAA700A14B53 /* StocksInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocksInfoViewController.swift; sourceTree = "<group>"; };
+		FF4FAC2525F3FAD200A14B53 /* Company.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Company.swift; sourceTree = "<group>"; };
+		FF4FAC2825F3FB6500A14B53 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		FF4FAC2C25F427BE00A14B53 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +64,75 @@
 		FF4FABFD25F3F25800A14B53 /* StocksApp */ = {
 			isa = PBXGroup;
 			children = (
-				FF4FABFE25F3F25800A14B53 /* AppDelegate.swift */,
-				FF4FAC0025F3F25800A14B53 /* SceneDelegate.swift */,
-				FF4FAC0225F3F25800A14B53 /* ViewController.swift */,
-				FF4FAC0425F3F25800A14B53 /* Main.storyboard */,
-				FF4FAC0725F3F25D00A14B53 /* Assets.xcassets */,
-				FF4FAC0925F3F25D00A14B53 /* LaunchScreen.storyboard */,
-				FF4FAC0C25F3F25D00A14B53 /* Info.plist */,
+				FF4FAC2B25F4279800A14B53 /* Views */,
+				FF4FAC1725F3F6A500A14B53 /* Services */,
+				FF4FAC1325F3F67A00A14B53 /* Models */,
+				FF4FAC1825F3F6BC00A14B53 /* SupportingFiles */,
+				FF4FAC1525F3F69100A14B53 /* ViewControllers */,
+				FF4FAC1A25F3F6D200A14B53 /* Storyboards */,
+				FF4FAC1B25F3F6DC00A14B53 /* Source */,
 			);
 			path = StocksApp;
+			sourceTree = "<group>";
+		};
+		FF4FAC1325F3F67A00A14B53 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FF4FAC2525F3FAD200A14B53 /* Company.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FF4FAC1525F3F69100A14B53 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				FF4FAC1F25F3FA8600A14B53 /* StocksListTableViewController.swift */,
+				FF4FAC2225F3FAA700A14B53 /* StocksInfoViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		FF4FAC1725F3F6A500A14B53 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				FF4FAC2825F3FB6500A14B53 /* NetworkManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		FF4FAC1825F3F6BC00A14B53 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				FF4FABFE25F3F25800A14B53 /* AppDelegate.swift */,
+				FF4FAC0025F3F25800A14B53 /* SceneDelegate.swift */,
+				FF4FAC0C25F3F25D00A14B53 /* Info.plist */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		FF4FAC1A25F3F6D200A14B53 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				FF4FAC0425F3F25800A14B53 /* Main.storyboard */,
+				FF4FAC0925F3F25D00A14B53 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		FF4FAC1B25F3F6DC00A14B53 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				FF4FAC0725F3F25D00A14B53 /* Assets.xcassets */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		FF4FAC2B25F4279800A14B53 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FF4FAC2C25F427BE00A14B53 /* TableViewCell.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,9 +205,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FF4FAC0325F3F25800A14B53 /* ViewController.swift in Sources */,
+				FF4FAC2925F3FB6500A14B53 /* NetworkManager.swift in Sources */,
 				FF4FABFF25F3F25800A14B53 /* AppDelegate.swift in Sources */,
 				FF4FAC0125F3F25800A14B53 /* SceneDelegate.swift in Sources */,
+				FF4FAC2025F3FA8600A14B53 /* StocksListTableViewController.swift in Sources */,
+				FF4FAC2625F3FAD200A14B53 /* Company.swift in Sources */,
+				FF4FAC2D25F427BE00A14B53 /* TableViewCell.swift in Sources */,
+				FF4FAC2325F3FAA700A14B53 /* StocksInfoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,7 +360,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QZLVH79HKK;
-				INFOPLIST_FILE = StocksApp/Info.plist;
+				INFOPLIST_FILE = StocksApp/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -296,7 +368,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = SwiftBook.StocksApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -307,7 +379,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QZLVH79HKK;
-				INFOPLIST_FILE = StocksApp/Info.plist;
+				INFOPLIST_FILE = StocksApp/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -315,7 +387,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = SwiftBook.StocksApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
